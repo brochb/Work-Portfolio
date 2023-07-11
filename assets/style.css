@@ -1,0 +1,109 @@
+:root {
+    --linear-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(218, 219, 196, 0.8127844887955182) 35%, rgba(152, 189, 196, 1) 100%);
+    --text-color: #def3f6;
+}
+
+h1 {
+    background: var(--linear-gradient);
+    color: var(--text-color);
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 75%;
+}
+
+h2 {}
+
+h3 {}
+
+nav {
+    background: var(--linear-gradient);
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    display: flex;
+    color: black;
+    width: 150px;
+    border: 2px solid rgb(109, 179, 179);
+    padding: 5px;
+    margin: 5px;
+}
+
+#hero {}
+
+footer {
+    color: var(--text-color);
+}
+
+footer li {
+    display: inline;
+}
+
+
+#previous-work {
+    
+}
+
+#about-me {}
+
+#contact {}
+
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 931px) {
+    nav ul {
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+
+    #hero img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        width: 100%;
+        margin: 1%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    #hero img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    #hero img {
+        display: none;
+    }
+}
