@@ -1,6 +1,20 @@
 :root {
     --linear-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(218, 219, 196, 0.8127844887955182) 35%, rgba(152, 189, 196, 1) 100%);
     --text-color: #def3f6;
+    background-color: #7fb2ad;
+}
+
+body,
+img,
+header,
+nav,
+footer {
+    margin: 0;
+    padding: 2px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 h1 {
@@ -11,7 +25,10 @@ h1 {
     width: 75%;
 }
 
-h2 {}
+h2 {
+    display: flex;
+    color: black;
+}
 
 h3 {}
 
@@ -34,7 +51,24 @@ nav a {
     margin: 5px;
 }
 
-#hero {}
+#hero img {
+    padding: 1px;
+    height: 30px;
+    width: 1200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+#profile img {
+    max-width: 15%;
+}
 
 footer {
     color: var(--text-color);
@@ -45,9 +79,7 @@ footer li {
 }
 
 
-#previous-work {
-    
-}
+#previous-work {}
 
 #about-me {}
 
@@ -59,18 +91,28 @@ footer li {
 
 /*media queries*/
 
-@media screen and (max-width: 931px) {
+@media screen and (max-width: 1300px) {
+    #hero img {
+        width: 600px;
+        margin-left: 275px;
+        margin-right: 215px;
+    }
+    
+}
+@media screen and (max-width: 930px) {
     nav ul {
         flex-direction: row-reverse;
         align-items: end;
     }
 
     #hero img {
-        display: none;
+        width: 600px;
+        margin-left: 150px;
+        margin-right: 100px;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     h1 {
         width: 100%;
         margin: 1%;
