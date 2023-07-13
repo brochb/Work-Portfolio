@@ -79,8 +79,14 @@ footer li {
 }
 
 
-#previous-work {}
+#previous-work {
+    display: flex;
+    flex: 1 0 100px;
+}
 
+#previous-work img {
+    max-width: 15%;
+}
 #about-me {}
 
 #contact {}
